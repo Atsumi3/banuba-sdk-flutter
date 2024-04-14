@@ -16,7 +16,7 @@ Banuba SDK for Flutter
   s.source_files = 'Classes/**/*'
   s.dependency 'Flutter'
   
-  version = '1.11.0'
+  version = '1.11.1'
   s.dependency 'BNBSdkCore', version
   s.dependency 'BNBSdkApi', version
   s.dependency 'BNBEffectPlayer', version
