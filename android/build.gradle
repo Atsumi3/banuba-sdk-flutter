@@ -8,7 +8,7 @@ buildscript {
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:7.1.2'
+        classpath 'com.android.tools.build:gradle:8.1.2'
     }
 }
 
@@ -31,6 +31,10 @@ rootProject.allprojects {
 apply plugin: 'com.android.library'
 
 android {
+    if (project.android.hasProperty("namespace")) {
+        namespace("com.banuba.sdk.flutter.banuba_sdk")
+    }
+
     compileSdkVersion 31
 
     compileOptions {
